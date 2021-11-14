@@ -1,0 +1,32 @@
+{% block content %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <form  action="/auth" method="post" enctype="multipart/form-data">
+      <div class="">
+        <h1>Login</h1>
+        <input type="text" name="name">
+      </div>
+
+      <input type="password" name="password" value="">
+      <div class="">
+        <button type="submit" name="button" class="btn btn-primary">Login</button>
+      </div>
+
+    </form>
+<style media="screen">
+    button{
+      margin-top: 20px;
+
+    }
+    input{
+
+      margin-top: 10px;
+
+    }
+    html{
+      text-align: center;
+    }
+    form{
+      text-align: center;
+    }
+</style>
+{% endblock %}
